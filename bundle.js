@@ -21888,15 +21888,6 @@
 	                    'section',
 	                    null,
 	                    _react2.default.createElement(
-	                        'p',
-	                        null,
-	                        'stay tuned...'
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'section',
-	                    null,
-	                    _react2.default.createElement(
 	                        'a',
 	                        { href: 'https://github.com/UnicodeSnowman', className: 'hover-image' },
 	                        _react2.default.createElement('img', { src: 'img/github.png', alt: 'github.com/UnicodeSnowman' })
