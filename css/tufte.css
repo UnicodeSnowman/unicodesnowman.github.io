@@ -1,6 +1,7 @@
 /* TODO move this hover-image style to own stylesheet */
 a.hover-image:hover {
     opacity: 0.4;
+    margin-right: 5px;
 }
 
 @font-face { font-family: ETBembo;

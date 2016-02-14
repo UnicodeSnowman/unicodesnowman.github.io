@@ -21891,6 +21891,11 @@
 	                        'a',
 	                        { href: 'https://github.com/UnicodeSnowman', className: 'hover-image' },
 	                        _react2.default.createElement('img', { src: 'img/github.png', alt: 'github.com/UnicodeSnowman' })
+	                    ),
+	                    _react2.default.createElement(
+	                        'a',
+	                        { href: 'https://www.linkedin.com/in/christophercaplinger', className: 'hover-image' },
+	                        _react2.default.createElement('img', { src: 'img/linkedin.png', alt: 'linkedin.com/in/christophercaplinger' })
 	                    )
 	                ),
 	                _react2.default.createElement(RouteHandler, null)
