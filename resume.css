@@ -18,9 +18,100 @@ span.description {
 
 table.technical-skills {
     font-size: 16px;
-    width: 100%;
+}
+
+th {
+    text-align: left;
 }
 
 td.title {
     width: 40%;
+}
+
+#resume h2 {
+    margin-top: 1rem;
+}
+
+#resume p {
+    margin-bottom: 8px;
+}
+
+#resume section {
+    padding-bottom: 0px;
+}
+
+.align-right {
+    font-style: inherit;
+    font-size: 85%;
+    float: right;
+}
+
+#resume h3 {
+    font-style: inherit;
+}
+
+.contact.print-only {
+    display: none;
+}
+
+td.print-only {
+    display: none;
+}
+
+@media print {
+    .print-only {
+        display: inherit;
+    }
+
+    .no-print {
+        display: none;
+    }
+
+    #resume-body {
+        width: 90%;
+        padding-left: 5%;
+    }
+
+    #resume {
+        padding-top: 0px;
+        font-size: 85%;
+    }
+
+    #resume h1 {
+        margin-top: 0px;
+    }
+
+    #resume h2 {
+        margin-top: 0px;
+        font-size: 24px;
+    }
+
+    #resume h3 {
+        margin-top: 0px;
+    }
+
+    #resume p {
+        width: 100%;
+        font-size: 16px;
+        margin-top: 0px;
+    }
+
+    #resume .job-title {
+        font-size: 1.2rem;
+    }
+
+    #resume .indivisible-unit {
+        page-break-inside: avoid;
+        margin-top: 1rem;
+    }
+
+    #resume ul {
+        width: 100%;
+    }
+
+    table.technical-skills {
+        font-size: 16px;
+        width: 100%;
+    }
+
 }

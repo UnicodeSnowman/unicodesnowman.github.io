@@ -3,18 +3,23 @@
         <link rel="stylesheet" href="resume.css">
         <link rel="stylesheet" href="tufte.css">
     </head>
-    <body>
-        <article>
+    <body id="resume-body">
+        <article id="resume">
             <h1>Christopher S. Caplinger</h1>
-            <p class="subtitle">
-                Software Engineer
-            </p>
-            <p class="contact">
+            <p class="subtitle">Software Engineer</p>
+            <p class="contact no-print">
                 <a href="mailto:caplingerc@gmail.com">E-Mail</a> |
                 <a href="https://twitter.com/unicode_snowman">Twitter</a> |
                 <a href="https://github.com/UnicodeSnowman">Github</a> |
                 <a href="http://stackoverflow.com/users/2045061/unicodesnowman">Stack Overflow</a> |
                 <a href="https://www.linkedin.com/in/christophercaplinger">LinkedIn</a>
+            </p>
+            <p class="contact subtitle print-only">
+                <span>caplingerc@gmail.com</span><br>
+                <span>twitter.com/unicode_snowman</span><br>
+                <span>github.com/UnicodeSnowman</span><br>
+                <span>stackoverflow.com/users/2045061/unicodesnowman</span><br>
+                <span>linkedin.com/in/christophercaplinger</span>
             </p>
             <section>
                 <p>
@@ -23,128 +28,130 @@
             </section>
             <section>
                 <h2>Experience</h2>
-                <p>
-                    Neosavvy, Software Developer
-                    <span class="marginnote">August 2013 - February 2016</span>
+                <div class="indivisible-unit">
+                    <p class="job-title">
+                        Neosavvy, Software Developer <span class="align-right">August 2013 - February 2016</span>
+                    </p>
                     <p>
                         <span class="description">Web application development and consulting for companies great and small in the New York City area and beyond, including:</span>
-                        <ul>
-                            <li>Bloomberg, LP</li>
-                            <li>Karmic Labs - Dash (<a href="https://karmiclabs.com/">https://karmiclabs.com/</a>)</li>
-                            <li>Sneeky/Shoutout</li>
-                            <li>Honest Buildings (<a href="https://www.honestbuildings.com/">https://www.honestbuildings.com/</a>)</li>
-                            <li>HBO</li>
-                            <li>Morgan Stanley</li>
-                            <li>Memmee (<a href="http://www.memmee.com">http://www.memmee.com</a>)</li>
-                        </ul>
-                        <span class="description">Technologies utilized: Javascript/AngularJS/ReactJS/NodeJS, Ruby/Rails, Python/Flask)</span>
                     </p>
-                </p>
-                <p>
-                    Rova, Software Developer
-                    <span class="marginnote">January 2012 - August 2013</span>
+                    <ul>
+                        <li>Bloomberg, LP</li>
+                        <li>Karmic Labs - Dash (<a href="https://karmiclabs.com/">https://karmiclabs.com/</a>)</li>
+                        <li>Sneeky/Shoutout</li>
+                        <li>Honest Buildings (<a href="https://www.honestbuildings.com/">https://www.honestbuildings.com/</a>)</li>
+                        <li>HBO</li>
+                        <li>Morgan Stanley</li>
+                        <li>Memmee (<a href="http://www.memmee.com">http://www.memmee.com</a>)</li>
+                    </ul>
+                    <p>
+                        <span class="description">Technologies utilized: Javascript/AngularJS/ReactJS/NodeJS, Ruby/Rails, Python/Flask</span>
+                    </p>
+                </div>
+                <div class="indivisible-unit">
+                    <p class="job-title">
+                        Rova, Software Developer <span class="align-right">January 2012 - August 2013</span>
+                    </p>
                     <p>
                         <span class="description">Full-stack software application development for ROVA's Mobile Device Management (MDM) solution, using C#/.NET MVC/ASP .NET and Javascript. </span>
                     </p>
-                </p>
-                <p>
-                    Quixotic Systems, Solar Engineer
-                    <span class="marginnote">November 2010 - December 2011</span>
+                </div>
+                <div class="indivisible-unit">
+                    <p class="job-title">
+                        Quixotic Systems, Solar Engineer <span class="align-right">November 2010 - December 2011</span>
+                    </p>
                     <p>
                         <span class="description">Solar Engineer for a Photovoltaic and Solar Thermal design and installation firm. Engineering, design, cost & rate-of-return analysis, and maintenance for various solar installations throughout the New York City area.</span> 
                     </p>
-                </p>
-                <p>
-                    Energy Investment Systems, Energy Project Site Coordinator
-                    <span class="marginnote">July 2009 - November 2010</span>
+                </div>
+                <div class="indivisible-unit">
+                    <p class="job-title">
+                        Energy Investment Systems, Engineer <span class="align-right">July 2009 - November 2010</span>
+                    </p>
                     <p>
                         <span class="description">Engineer &amp; Analyst for a sustainable energy consulting firm. Conducted energy audits of residential buildings in NYC. Performed energy and cost savings analysis of efficiency measures. On-site coordination of project implementation and construction.</span> 
                     </p>
-                </p>
+                </div>
+            </section>
+            <section class="indivisible-unit">
+                <h2>Technical</h2>
+                <table class="technical-skills">
+                    <thead>
+                        <tr>
+                            <th>Technology</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td class="title">Javascript</td>
+                        <td>
+                            NodeJS, ReactJS, AngularJS, ESNext/ES6, jQuery, Test-Driven Development with Mocha &amp; Jasmine, Webpack, and Babel
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="title">Ruby</td>
+                        <td>Ruby on Rails, Sinatra, RSpec</td>
+                    </tr>
+                    <tr>
+                        <td class="title">Git</td>
+                        <td>Git-fluent, in-depth experience with branching, forking, pull requests, rebasing (safely) and squashing commits</td>
+                    </tr>
+                    <tr>
+                        <td class="title">HTML/CSS</td>
+                        <td>HTML5 (including canvas, svg), LESS, SASS</td>
+                    </tr>
+                    <tr>
+                        <td class="title">Operating Systems</td>
+                        <td>OS X, Linux</td>
+                    </tr>
+                    <tr>
+                        <td class="title">Editor</td>
+                        <td class="no-print">
+                            Vim
+                            <label for="capvim" class="margin-toggle sidenote-number"></label>
+                            <span class="sidenote"><a href="https://github.com/UnicodeSnowman/cap-vim">cap-vim</a></span>
+                        </td>
+                        <td class="print-only">
+                            Vim (https://github.com/UnicodeSnowman/cap-vim)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="title">Additional Experience &amp; Side-Projects</td>
+                        <td>Clojure(script), Elm, Rust</td>
+                    </tr>
+                </table>
             </section>
             <section>
-                <h2>Technical</h2>
+                <h2>Education</h2>
+                <p class="job-title">
+                    Boston University <span class="align-right">May 2009</span><br>
+                    <span class="description"><i>College of Electrical &amp; Computer Engineering</i></span>
+                </p>
                 <p>
-                    <table class="technical-skills">
-                        <thead>
-                            <tr>
-                                <th>Technology</th>
-                                <th>Details</th>
-                            </tr>
-                        </thead>
-                        <tr>
-                            <td class="title">Javascript</td>
-                            <td>
-                                In-depth experience with NodeJS, ReactJS, AngularJS, ESNext/ES6, jQuery, Test-Driven Development with Mocha &amp; Jasmine, Webpack, and Babel
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="title">Ruby</td>
-                            <td>In-depth experience with Ruby on Rails, Sinatra</td>
-                        </tr>
-                        <tr>
-                            <td class="title">Git</td>
-                            <td>Git-fluent, in-depth experience with branching, forking, pull requests, rebasing (safely) and squashing commits</td>
-                        </tr>
-                        <tr>
-                            <td class="title">HTML/CSS</td>
-                            <td>In-depth experience building HTML5 applications (including canvas, svg), LESS, SASS</td>
-                        </tr>
-                        <tr>
-                            <td class="title">Operating Systems</td>
-                            <td>OS X, Linux</td>
-                        </tr>
-                        <tr>
-                            <td class="title">Editor</td>
-                            <td>
-                                Vim
-                                <label for="capvim" class="margin-toggle sidenote-number"></label>
-                                <span class="sidenote"><a href="https://github.com/UnicodeSnowman/cap-vim">cap-vim</a></span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="title">Additional Experience &amp; Interests</td>
-                            <td>Clojure(script), Elm, Rust</td>
-                        </tr>
-                    </table>
+                </p>
+                <p>
+                    <span class="description">Bachelor of Science, Electrical Engineering</span>
                 </p>
             </section>
             <section>
                 <h2>Open Source Contributions / Organizations</h2>
-                <p>
-                    ngNYC Meetup, Organizer
-                    <span class="marginnote">August 2013 - Present</span>
+                <div class="indivisible-unit">
+                    <p class="job-title">
+                        ngNYC Meetup, Organizer <span class="align-right">August 2013 - Present</span>
+                    </p>
                     <p>
                         <span class="description">Organized NYC-based AngularJS meetup with over 500 members.</span>
-                        <span class="marginnote">
+                        <span class="no-print marginnote">
                             <a href="http://www.meetup.com/ng-nyc/">http://www.meetup.com/ng-nyc/</a>
                         </span>
                     </p>
-                </p>
-                <p>
-                    Project Documentation
-                    <!--
-                    <span class="marginnote">August 2013 - Present</span>
-                    <label for="ngnyc" class="margin-toggle sidenote-number"></label>
-                    <span class="sidenote">
-                        <a href="http://www.meetup.com/ng-nyc/">http://www.meetup.com/ng-nyc/</a>
-                    </span>
-                    -->
+                    <p class="job-title">
+                        Project Documentation
+                    </p>
                     <p>
                         <span class="description">Contributor to <a href="https://github.com/angular">AngularJS</a> and <a href="https://github.com/Reactive-Extensions/RxJS">RxJS</a> documentation</span>
                     </p>
-                </p>
-            </section>
-            <section>
-                <h2>Education</h2>
-                <p>
-                    Boston University<br>
-                    College of Electrical &amp; Computer Engineering
-                    <p>
-                        <span class="description">Bachelor of Science, Electrical Engineering</span>
-                        <span class="marginnote">May 2009</span>
-                    </p>
-                </p>
+                </div>
             </section>
             <section>
                 <h2>Good Times</h2>
