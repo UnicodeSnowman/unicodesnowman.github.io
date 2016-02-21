@@ -72,6 +72,10 @@ td.print-only {
         padding-left: 5%;
     }
 
+    #resume-body {
+        padding-left: 0;
+    }
+
     #resume {
         padding-top: 0px;
         font-size: 85%;
