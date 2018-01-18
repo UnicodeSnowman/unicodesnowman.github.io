@@ -21,12 +21,12 @@ const img = s
 
 function fadeout() {
   document.body.style.background = '#fff';
-  animate(img, { opacity: 0 }, 2000)
+  animate(img, { opacity: 0 }, 1000)
     .then(() => console.log('>>> REDIRECT'))
 }
 
 setTimeout(() => {
-  animate(circle, { r: '100%' }, 4000)
+  animate(circle, { r: '100%' }, 3000)
 }, 1500);
 
 setTimeout(function() {
