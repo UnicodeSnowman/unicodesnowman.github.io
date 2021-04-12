@@ -104,7 +104,7 @@
         Array.from(audioPlayer.children).forEach(child => {
           child.remove();
         });
-        audioPlayer.setAttribute('src', downloadUrl)
+        //audioPlayer.setAttribute('src', downloadUrl);
         audioPlayer.onended = () => {
           const next = nextFile();
           const loading = document.getElementById('loading');
