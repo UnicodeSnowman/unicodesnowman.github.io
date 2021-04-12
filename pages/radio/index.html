@@ -58,6 +58,7 @@
       </svg>
       <div id="loading" class="hidden">Loading...</div>
       <audio controls id="audio-player" />
+      <div id="errors"></div>
     </div>
 
     <script>
@@ -137,6 +138,8 @@
             loading.removeAttribute('class');
             playFile(next, { randomStart: true });
           } catch (err) {
+            const errors = document.getElementById('errors');
+            errors.innerText = err.message;
             console.error(err);
           }
 
