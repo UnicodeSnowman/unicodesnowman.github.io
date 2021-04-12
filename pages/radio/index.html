@@ -97,14 +97,12 @@
 
         const { randomStart = false } = opts;
         const { result } = await dbx.filesDownload({ path: file.path_lower });
-        const downloadUrl = URL.createObjectURL(result.fileBlob);
+        const blob = new Blob([result.fileBlob], { type: 'audio/mp3' });
+        const downloadUrl = URL.createObjectURL(blob);
 
         const audioPlayer = document.getElementById('audio-player');
         audioPlayer.setAttribute('volume', 0)
-        Array.from(audioPlayer.children).forEach(child => {
-          child.remove();
-        });
-        //audioPlayer.setAttribute('src', downloadUrl);
+        audioPlayer.setAttribute('src', downloadUrl);
         audioPlayer.onended = () => {
           const next = nextFile();
           const loading = document.getElementById('loading');
@@ -116,20 +114,11 @@
           loading.setAttribute('class', 'hidden');
           if (randomStart) {
             audioPlayer.currentTime = audioPlayer.duration * Math.random();
-          } else {
+          } else {;
             audioPlayer.play();
           }
           audioPlayer.volume = 1;
         };
-
-
-        const sourceElem = document.createElement('source')
-        sourceElem.setAttribute('src', downloadUrl)
-        // TODO other mime types? from info?
-        let mimeType = 'audio/mp3';
-        sourceElem.setAttribute('type', mimeType)
-
-        audioPlayer.appendChild(sourceElem);
       }
 
       (async () => {
