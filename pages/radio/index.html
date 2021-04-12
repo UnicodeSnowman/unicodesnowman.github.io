@@ -2,7 +2,6 @@
 <html>
   <head>
     <title>Aquarium Drunkard Radio</title>
-    <link rel="stylesheet" href="/styles.css">
     <script src="./Dropbox-sdk.min.js"></script>
     <style>
       body {
@@ -103,7 +102,7 @@
         const audioPlayer = document.getElementById('audio-player');
         audioPlayer.setAttribute('volume', 0)
         audioPlayer.setAttribute('src', downloadUrl)
-        audioPlayer.onloadeddata = function () {
+        audioPlayer.onloadeddata = () => {
           const loading = document.getElementById('loading');
           loading.setAttribute('class', 'hidden');
           if (randomStart) {
@@ -111,7 +110,7 @@
           }
           audioPlayer.volume = 1;
         };
-        audioPlayer.onended = function() {
+        audioPlayer.onended = () => {
           const next = nextFile();
           const loading = document.getElementById('loading');
           loading.removeAttribute('class');
@@ -119,7 +118,7 @@
         };
       }
 
-      (async function() {
+      (async () => {
         let dbx;
 
         if (isAuthenticated()) {
