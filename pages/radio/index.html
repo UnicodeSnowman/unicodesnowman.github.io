@@ -60,7 +60,10 @@
       <div id="progress"></div>
     </div>
 
+    <!--
     <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/1.0.0/dist/progressbar.js"></script>
+    -->
+    <script src="./progressbar.js"></script>
     <script src="./Dropbox-sdk.min.js"></script>
     <script>
       const CLIENT_ID = 'mf63fmaowmhulcp';
@@ -165,21 +168,23 @@
             files = await response.result.entries.filter(entry => entry['.tag'] === 'file' && isAudio(entry.name));
             const next = nextFile();
             playFile(next, { randomStart: true });
-          } catch (err) {
-            console.error(err);
-          }
+        } catch (err) {
+          console.error(err);
+          return;
+        }
 
-          const audioPlayer = document.getElementById('audio-player'); const logo = document.getElementById('ad-logo');
-          logo.onclick = () => {
-            if (audioPlayer.paused) {
-              document.getElementById('ad-logo').setAttribute('class', 'pulse');
-              audioPlayer.play();
-            } else {
-              document.getElementById('ad-logo').removeAttribute('class');
-              audioPlayer.pause();
-            }
-          };
-        })()
+        const audioPlayer = document.getElementById('audio-player');
+        const logo = document.getElementById('ad-logo');
+        logo.onclick = () => {
+          if (audioPlayer.paused) {
+            document.getElementById('ad-logo').setAttribute('class', 'pulse');
+            audioPlayer.play();
+          } else {
+            document.getElementById('ad-logo').removeAttribute('class');
+            audioPlayer.pause();
+          }
+        };
+      })()
     </script>
   </body>
 </html>
